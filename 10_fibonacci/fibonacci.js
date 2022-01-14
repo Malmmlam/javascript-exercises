@@ -1,9 +1,5 @@
 const fibonacci = function(fibNum) {
-    // if(typeof(fibNum) === "string") {
-    //     parseInt(fibNum);
-    // }
     parseInt(fibNum);
-
     if(fibNum < 1) {return "OOPS"}
 
     let fibArray = [0, 0, 1];
