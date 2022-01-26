@@ -7,19 +7,12 @@ const subtract = function(num1, num2) {
 };
 
 const sum = function(numArray) {
-	let returnValue = 0;
-  for(let i = 0; i < numArray.length; i++) {
-    returnValue += numArray[i];
-  }
-
+  const returnValue = numArray.reduce((sum, num) => sum + num, 0);
   return returnValue;
 };
 
 const multiply = function(numArray) {
-  let returnValue = numArray[0];
-  for(let i = 1; i < numArray.length; i++) {
-    returnValue *= numArray[i]
-  }
+  const returnValue = numArray.reduce((product, num) => product * num, 1);
   return returnValue;
 };
 
