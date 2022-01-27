@@ -1,7 +1,6 @@
 const palindromes = function (str) {
     let regex = /[!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~/\s/g]/g;
     str = str.replace(regex, "").toLowerCase();
-    // str = str.toLowerCase();
     let strArray = str.split("");
     let checkArray = str.split("").reverse();
 
